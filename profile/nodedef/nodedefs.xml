@@ -1,0 +1,116 @@
+<nodeDefs>
+    <!-- NODE DEF from 5.0 document http://wiki.universal-devices.com/index.php?title=V50_MAIN -->
+    <!-- controller, this must mach the id in your Controller class-->
+    <nodeDef id="controller" nls="ctl">
+        <editors />
+        <sts>
+			<st id="ST" editor="bool" />
+            <st id="GV2" editor="bool" />
+            <st id="GV3" editor="bool" />
+      <st id="GV1" editor="I_DEBUG" />
+		</sts>
+        <cmds>
+            <sends>
+              <!-- These are for our heartbeat -->
+              <cmd id="DON" />
+              <cmd id="DOF" />
+            </sends>
+            <accepts>
+              <cmd id="SET_DM">
+                <p id="" editor="I_DEBUG" init="GV1" />
+              </cmd>
+              <cmd id="QUERY" />
+              <cmd id="DISCOVER" />
+              <cmd id="REMOVE_NOTICES_ALL" />
+              <cmd id="REMOVE_NOTICE_TEST" />
+              <cmd id="UPDATE_PROFILE" />
+            </accepts>
+        </cmds>
+    </nodeDef>
+	<!-- BSApi-Edge One -->
+    <nodeDef id="baspiedge1_id" nls="BASPI1">
+        <editors />
+        <sts>
+            <!--<st id="ST" editor="bool" />-->
+            <st id="GV0" editor="FAHVAL" />
+            <st id="GV12" editor="STATUS" />
+            <st id="GV6" editor="STATUS" />
+            <st id="GV1" editor="FAHVAL" />
+            <st id="GV13" editor="STATUS" />
+            <st id="GV7" editor="STATUS" />
+            <st id="GV2" editor="FAHVAL" />
+            <st id="GV14" editor="STATUS" />
+            <st id="GV8" editor="STATUS" />
+            <st id="GV3" editor="FAHVAL" />
+            <st id="GV15" editor="STATUS" />
+            <st id="GV9" editor="STATUS" />
+            <st id="GV4" editor="FAHVAL" />
+            <st id="GV16" editor="STATUS" />
+            <st id="GV10" editor="STATUS" />
+            <st id="GV5" editor="FAHVAL" />
+            <st id="GV17" editor="STATUS" />
+            <st id="GV11" editor="STATUS" />
+        </sts>
+        <cmds>
+            <sends />
+            <accepts>
+              <cmd id="BON1" />
+              <cmd id="BOF1" />
+              <cmd id="BON2" />
+              <cmd id="BOF2" />
+              <cmd id="BON3" />
+              <cmd id="BOF3" />
+              <cmd id="BON4" />
+              <cmd id="BOF4" />
+              <cmd id="BON5" />
+              <cmd id="BOF5" />
+              <cmd id="BON6" />
+              <cmd id="BOF6" />
+              <cmd id="QUERY" />
+            </accepts>
+        </cmds>
+    </nodeDef>
+    <!-- BASpi-Edge Two -->
+    <nodeDef id="baspiedge2_id" nls="BASPI2">
+        <editors />
+        <sts>
+            <!--<st id="ST" editor="bool" />-->
+            <st id="GV0" editor="FAHVAL" />
+            <st id="GV12" editor="STATUS" />
+            <st id="GV6" editor="STATUS" />
+            <st id="GV1" editor="FAHVAL" />
+            <st id="GV13" editor="STATUS" />
+            <st id="GV7" editor="STATUS" />
+            <st id="GV2" editor="FAHVAL" />
+            <st id="GV14" editor="STATUS" />
+            <st id="GV8" editor="STATUS" />
+            <st id="GV3" editor="FAHVAL" />
+            <st id="GV15" editor="STATUS" />
+            <st id="GV9" editor="STATUS" />
+            <st id="GV4" editor="FAHVAL" />
+            <st id="GV16" editor="STATUS" />
+            <st id="GV10" editor="STATUS" />
+            <st id="GV5" editor="FAHVAL" />
+            <st id="GV17" editor="STATUS" />
+            <st id="GV11" editor="STATUS" />
+        </sts>
+        <cmds>
+            <sends />
+            <accepts>
+              <cmd id="BON1" />
+              <cmd id="BOF1" />
+              <cmd id="BON2" />
+              <cmd id="BOF2" />
+              <cmd id="BON3" />
+              <cmd id="BOF3" />
+              <cmd id="BON4" />
+              <cmd id="BOF4" />
+              <cmd id="BON5" />
+              <cmd id="BOF5" />
+              <cmd id="BON6" />
+              <cmd id="BOF6" />
+              <cmd id="QUERY" />
+            </accepts>
+        </cmds>
+    </nodeDef>
+</nodeDefs>
