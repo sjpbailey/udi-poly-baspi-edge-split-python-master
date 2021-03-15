@@ -6,7 +6,7 @@ except ImportError:
 import sys
 import time
 import urllib3
-from bascontrolns import Device, Platform
+from bascontrolwire_ns import Device, Platform
 
 LOGGER = polyinterface.LOGGER
 
