@@ -14,8 +14,7 @@ import time
 import requests
 from requests.auth import HTTPBasicAuth
 import xml.etree.ElementTree as ET
-from nodes import bascontrolwire_ns 
-from bascontrolwire_ns import Device, Platform
+from nodes import bascontrolwire_ns, Device, Platform
 
 # My Template Node
 from nodes import EdgeOneNode
