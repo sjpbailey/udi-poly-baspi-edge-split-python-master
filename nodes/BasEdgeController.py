@@ -14,7 +14,7 @@ import time
 import requests
 from requests.auth import HTTPBasicAuth
 import xml.etree.ElementTree as ET
-import bascontrolwire_ns
+from nodes import bascontrolwire_ns
 from bascontrolwire_ns import Device, Platform
 
 # My Template Node
